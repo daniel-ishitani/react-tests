@@ -5,7 +5,7 @@
 }
 
 .imageLogo {
-  background-image: url("/assets/images/logo.png");
+  background-image: url("/public/images/logo.png");
   width: 351px;
   height: 117px;
 }
@@ -22,7 +22,7 @@
   }
 
   .imageLogo {
-    background-image: url("/assets/images/logo-small.png");
+    background-image: url("/public/images/logo-small.png");
     width: 235px;
     height: 199px;
   }
