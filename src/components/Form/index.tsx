@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import { useAddParticipant } from '../../state/hooks/useAddParticipant';
 import { useErrorMessage } from '../../state/hooks/useErrorMessage';
+import styles from './styles.module.css';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -22,15 +23,17 @@ const Form = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input
-        type="text"
-        placeholder="Insert the participants names"
-        value={name}
-        onChange={event => setName(event.target.value)}
-        ref={inputRef}
-      />
-      <button disabled={!name}>Add</button>
-      {errorMessage && <p role="alert">{errorMessage}</p>}
+      <div className={styles.inputBtnGroup}>
+        <input
+          type="text"
+          placeholder="Insert the participants names"
+          value={name}
+          onChange={event => setName(event.target.value)}
+          ref={inputRef}
+        />
+        <button disabled={!name}>Add</button>
+      </div>
+      {errorMessage && <p role="alert" className={styles.errorAlert}>{errorMessage}</p>}
     </form>
   )
 };

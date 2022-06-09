@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings renders correctly 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <section>
+      <h1>
+        Let's start!
+      </h1>
+      <form>
+        <div
+          class="groupInputBtn"
+        >
+          <input
+            placeholder="Insert the participants names"
+            type="text"
+            value=""
+          />
+          <button
+            disabled=""
+          >
+            Add
+          </button>
+        </div>
+        
+      </form>
+      <ul />
+      <footer
+        class="footer"
+      >
+        <button
+          class="button"
+          disabled=""
+        >
+          Start
+        </button>
+        <img
+          alt="Shopping bags"
+          src="/images/sacolas.png"
+        />
+      </footer>
+    </section>
+  </div>
+</div>
+`;
