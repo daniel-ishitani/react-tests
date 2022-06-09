@@ -11,7 +11,7 @@ exports[`Settings renders correctly 1`] = `
       </h1>
       <form>
         <div
-          class="groupInputBtn"
+          class="inputBtnGroup"
         >
           <input
             placeholder="Insert the participants names"

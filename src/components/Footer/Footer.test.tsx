@@ -10,6 +10,11 @@ jest.mock('../../state/hooks/useParticipantList', () => ({
 }));
 
 const mockNavigation = jest.fn();
+const mockDraw = jest.fn();
+
+jest.mock('../../state/hooks/useDrawer', () => ({
+  useDrawer: () => mockDraw,
+}));
 
 jest.mock('react-router-dom', () => ({
   useNavigate: () => mockNavigation,
@@ -60,6 +65,7 @@ describe('Footer', () => {
         fireEvent.click(button);
 
         expect(mockNavigation).toBeCalledWith('/draw');
+        expect(mockDraw).toBeCalledTimes(1);
       });
     });
   });
