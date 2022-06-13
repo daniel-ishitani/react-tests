@@ -35,7 +35,7 @@ describe('Draw', () => {
     setup();
 
     const options = screen.queryAllByRole('option');
-    expect(options).toHaveLength(participants.length);
+    expect(options).toHaveLength(participants.length + 1);
   });
 
   it('displays the Secret santa when requested', () => {

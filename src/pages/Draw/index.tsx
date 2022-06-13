@@ -28,6 +28,7 @@ const Draw = () => {
           value={selectedParticipant}
           onChange={event => setSelectedParticipant(event.target.value)}
         >
+          <option>Select your name</option>
           {participants.map(participant => <option key={participant}>{participant}</option>)}
         </select>
         <button className={styles.drawButton}>Draw!</button>
